@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comitê Diversidade MG - Raça</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #341933 0%, #7209b7 100%);
+        }
+        
+        .pillar-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-item {
+            min-width: 100%;
+            transition: transform 0.5s ease;
+        }
+        
+        #material-card-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        #material-card-container::-webkit-scrollbar-thumb {
+            background: #341933;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo-diversidade.png" alt="Logo do Comitê Diversidade MG - Raça: Ícone abstrato com formas entrelaçadas representando diversidade em tons de roxo" class="mr-3">
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#objetivo" class="font-medium hover:text-purple-700">Objetivo</a></li>
+                    <li><a href="#pilares" class="font-medium hover:text-purple-700">Pilares</a></li>
+                    <li><a href="#materiais" class="font-medium hover:text-purple-700">Materiais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Seção Objetivo e Últimas Postagens -->
+    <section id="objetivo" class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <!-- Bloco Objetivo -->
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="hero-gradient text-white p-8 rounded-xl h-full">
+                        <h2 class="text-3xl font-bold mb-4">Comitê Diversidade MG - Raça</h2>
+                        <p class="text-lg mb-6">Nosso objetivo é promover a equidade racial dentro da organização e na sociedade, combatendo o racismo estrutural e criando um ambiente verdadeiramente inclusivo que valorize a diversidade étnico-racial em todas as suas dimensões.</p>
+                        <p class="mb-6">Atuamos através de políticas afirmativas, educação antirracista e parcerias estratégicas para transformar não apenas nossa cultura organizacional, mas também impactar positivamente a comunidade ao nosso redor.</p>
+                    </div>
+                </div>
+                
+                <!-- Bloco Últimas Postagens -->
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-white p-6 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-purple-900 border-b pb-2">Principais postagens</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Postagem 1 -->
+                            <div class="flex items-start">
+                                <div class="w-1/3 mr-4">
+                                    <img src="GuiaComunicao.png" alt="Grupo diverso de profissionais discutindo em uma mesa de reunião com gráficos de diversidade" class="rounded-lg w-full">
+                                </div>
+                                <div class="w-2/3">
+                                    <h4 class="font-bold text-lg mb-1">Guia de comunicação respeitosa com pessoas pretas e pardas</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Publicado em 08/11/2025</p>
+                                    <p class="text-gray-700">O material aborda o papel do RH de promover a inclusão desde o primeiro contato com o candidato...</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Postagem 2 -->
+                            <div class="flex items-start">
+                                <div class="w-1/3 mr-4">
+                                    <img src="ManualAntirracista.png" alt="Workshop sobre vieses inconscientes com participantes interagindo e anotando" class="rounded-lg w-full">
+                                </div>
+                                <div class="w-2/3">
+                                    <h4 class="font-bold text-lg mb-1">Pequeno manual antirracista</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Publicado em 08/11/2025</p>
+                                    <p class="text-gray-700">O "Pequeno Manual Antirracista" de Djamila Ribeiro é um guia prático que aborda o racismo estrutural como um sistema de opressão que nega direitos...</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Postagem 3 -->
+                            <div class="flex items-start">
+                                <div class="w-1/3 mr-4">
+                                    <img src="GuiaDiversidade.png" alt="Evento externo do comitê com comunidade local em espaço aberto e colorido" class="rounded-lg w-full">
+                                </div>
+                                <div class="w-2/3">
+                                    <h4 class="font-bold text-lg mb-1">Diversidade - Conceitos Basicos</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Publicado em 27/08/2025</p>
+                                    <p class="text-gray-700">O material aborda de forma objetiva e educativa a interseção entre gênero e raça...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ações do Comitê (Carrossel) 
+    <section id="acoes" class="bg-primary bg-opacity-10 py-12 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Ações do Comitê</h2>
+            
+            <div class="relative overflow-hidden">
+                <div class="flex transition-transform duration-300" id="carousel">
+                     Ação 1 
+                    <div class="carousel-item min-w-full md:min-w-1/2 lg:min-w-1/3 px-4">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/800x500" alt="Workshop sobre diversidade racial com participantes diversos em sala de treinamento" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2">Workshop de Conscientização</h3>
+                                <p class="text-gray-600">Capacitação sobre vieses inconscientes para equipes de RH.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    Ação 2 
+                    <div class="carousel-item min-w-full md:min-w-1/2 lg:min-w-1/3 px-4">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/800x500" alt="Grupo diverso de colaboradores participando de roda de conversa em espaço corporativo" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2">Roda de Conversa</h3>
+                                <p class="text-gray-600">Espaço seguro para relatos e discussões sobre experiências raciais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    Ação 3 
+                    <div class="carousel-item min-w-full md:min-w-1/2 lg:min-w-1/3 px-4">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/800x500" alt="Evento de networking em espaço moderno com pessoas de diferentes etnias interagindo" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2">Networking Inclusivo</h3>
+                                <p class="text-gray-600">Conectando profissionais negros a oportunidades de carreira.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-md hover:bg-opacity-100" onclick="prevSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-md hover:bg-opacity-100" onclick="nextSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Seção Pilares -->
+    <section id="pilares" class="py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-purple-900">Nossos Pilares Estratégicos</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Pilar 1 -->
+            <div class="pillar-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Ícone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Políticas e Processos Internos</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Revisar e apoiar nos processos de recrutamento e seleção.</li>
+                    <li>Buscar parcerias com organizações e comunidades que promovam a inclusão racial para ampliar o alcance na busca de candidatos.</li>
+                    <li>Garantir que os entrevistadores sejam treinados para reconhecer e mitigar vieses inconsistentes.</li>
+                </ul>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="pillar-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Ícone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Treinamentos e Workshop</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Organizar sessões regulares sobre vieses inconsistentes, história racial e letramento racial.</li>
+                    <li>Desenvolver e distribuir materiais informativos que abordem temas relevantes sobre raça e diversidade.</li>
+                    <li>Realizar rodas de conversa, painéis de discussão e palestras com a participação de colaboradores de diferentes etnias, promovendo o compartilhamento de experiências e perspectivas.</li>
+                </ul>
+            </div>
+
+            <!-- Pilar 3 -->
+            <div class="pillar-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Ícone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Cultura e Clima Organizacional</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Buscar parcerias com organizações e iniciativas externas que atuem na promoção da equidade racial.</li>
+                    <li>Compartilhar publicamente os avanços e desafios da empresa na agenda de diversidade racial.</li>
+                </ul>
+            </div>
+
+            <!-- Pilar 4 -->
+            <div class="pillar-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Ícone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Engajamento Externo</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Apoiar a criação e o desenvolvimento de grupos de afinidade focados em raça.</li>
+                    <li>Promover eventos e campanhas que celebrem datas importantes para a cultura racial.</li>
+                    <li>Garantir que a alta gerência esteja visivelmente engajada e comunicando o compromisso da empresa com a equidade racial de forma inconsistente.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Seção Materiais Educacionais -->
+    <section id="materiais" class="py-12 bg-purple-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-purple-900">Materiais Educacionais</h2>
+            <!-- Cards de Materiais -->
+            <div id="material-card-container" class="flex overflow-x-auto pb-4 -mx-4 px-4" style="scrollbar-width: thin;">
+                <div class="flex space-x-6">
+                     <!-- Material 1 -->
+                    <div class="material-card bg-white rounded-xl shadow-md p-6 w-72 flex-shrink-0" data-type="infografico">
+                        <img src="boletim.png" alt="Infográfico colorido mostrando dados sobre desigualdade racial no mercado de trabalho brasileiro" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <span class="inline-block bg-purple-100 text-purple-900 text-xs px-2 py-1 rounded-full mb-2">Artigo</span>
+                        <h4 class="font-bold text-lg mb-2">Boletim sobre a desigualdade racial no mercado de trabalho</h4>
+                        <p class="text-gray-600 text-sm mb-3">Publicado em 25/08/2025</p>
+                        <p class="text-gray-700 mb-4">O boletim publicado pelo governo federal aborda a desigualdade racial no mercado de trabalho, apresentando dados detalhados e análises que evidenciam as disparidades enfrentadas por diferentes grupos raciais no Brasil. As informações são baseadas na Pesquisa Nacional por Amostra de Domicílios Contínua, conduzida pelo IBGE.</p>
+                        <button id="botao-baixar" class="w-full bg-purple-900 text-white py-2 rounded-lg hover:bg-purple-800 transition">Baixar</button>
+                    </div>
+
+                    
+                    <!-- Material 2 -->
+                    <div class="material-card bg-white rounded-xl shadow-md p-6 w-72 flex-shrink-0" data-type="infografico">
+                        <img src="Gemini_Generated_Image_raoiwsraoiwsraoi.png" alt="Infográfico colorido mostrando dados sobre desigualdade racial no mercado de trabalho brasileiro" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <span class="inline-block bg-purple-100 text-purple-900 text-xs px-2 py-1 rounded-full mb-2">Infográfico</span>
+                        <h4 class="font-bold text-lg mb-2">Desigualdade Racial no mercado de trabalho</h4>
+                        <p class="text-gray-600 text-sm mb-3">Publicado em 25/08/2025</p>
+                        <p class="text-gray-700 mb-4">Infografico sobre a desigualdade racial no Brasil, com um resumo do boletim especial publicado pelo DIEESE (Departamento Intersindical de Estatística e Estudos Socioeconômicos) no Dia da Consciência Negra de 2024. <p>Boletim completo disponível em https://surl.lu/wtuxsg.</p></p>
+                        <button id="botao-baixar1" class="w-full bg-purple-900 text-white py-2 rounded-lg hover:bg-purple-800 transition">Baixar</button>
+                    </div>
+
+                    <!-- Material 3 -->
+                    <div class="material-card bg-white rounded-xl shadow-md p-6 w-72 flex-shrink-0" data-type="infografico">
+                        <img src="GuiaDiversidade.png" alt="Infográfico colorido mostrando dados sobre desigualdade racial no mercado de trabalho brasileiro" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <span class="inline-block bg-purple-100 text-purple-900 text-xs px-2 py-1 rounded-full mb-2">E-book</span>
+                        <h4 class="font-bold text-lg mb-2">Diversidade - Conceitos Basicos</h4>
+                        <p class="text-gray-600 text-sm mb-3">Publicado em 27/08/2025</p>
+                        <p class="text-gray-700 mb-4">O material aborda de forma objetiva e educativa a interseção entre gênero e raça, com foco na promoção da equidade e no combate às desigualdades estruturais. Com o documento, é possível entender conceitos como tipos de racismo, colorismo, Black Money, além de mostrar esteriótipos e comportamentos práticos.</p>
+                        <button id="botao-baixar2" class="w-full bg-purple-900 text-white py-2 rounded-lg hover:bg-purple-800 transition">Baixar</button>
+                    </div>
+                    
+                    <!-- Material 4 -->
+                    <div class="material-card bg-white rounded-xl shadow-md p-6 w-72 flex-shrink-0" data-type="infografico">
+                        <img src="GuiaComunicao.png" alt="Infográfico colorido mostrando dados sobre desigualdade racial no mercado de trabalho brasileiro" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <span class="inline-block bg-purple-100 text-purple-900 text-xs px-2 py-1 rounded-full mb-2">E-book</span>
+                        <h4 class="font-bold text-lg mb-2">Guia de comunicação respeitosa com pessoas pretas e pardas</h4>
+                        <p class="text-gray-600 text-sm mb-3">Publicado em 08/11/2025</p>
+                        <p class="text-gray-700 mb-4">O material aborda o papel do RH de promover a inclusão desde o primeiro contato com o candidato, explicando conceitos e dicas para evitar vieses e construir um ambiente seguro e respeitoso desde o primeiro momento com o candidato.</p>
+                        <button id="botao-baixar3" class="w-full bg-purple-900 text-white py-2 rounded-lg hover:bg-purple-800 transition">Baixar</button>
+                    </div>
+                    
+                    <!-- Material 5 -->
+                    <div class="material-card bg-white rounded-xl shadow-md p-6 w-72 flex-shrink-0" data-type="infografico">
+                        <img src="ManualAntirracista.png" alt="Infográfico colorido mostrando dados sobre desigualdade racial no mercado de trabalho brasileiro" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <span class="inline-block bg-purple-100 text-purple-900 text-xs px-2 py-1 rounded-full mb-2">E-book</span>
+                        <h4 class="font-bold text-lg mb-2">Pequeno manual antirracista</h4>
+                        <p class="text-gray-600 text-sm mb-3">Publicado em 08/11/2025</p>
+                        <p class="text-gray-700 mb-4">O "Pequeno Manual Antirracista" de Djamila Ribeiro é um guia prático que aborda o racismo estrutural como um sistema de opressão que nega direitos, e não apenas como atos individuais de preconceito. O livro propõe ações concretas para combater o racismo em diversas esferas da vida, como trabalho e ambiente familiar.</p>
+                        <button id="botao-baixar4" class="w-full bg-purple-900 text-white py-2 rounded-lg hover:bg-purple-800 transition">Baixar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Script para o carrossel -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+        
+        function updateCarousel() {
+            const carousel = document.getElementById('carousel');
+            const slideWidth = slides[0].offsetWidth;
+            carousel.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        
+        // Inicializa o carrossel
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCarousel();
+            
+            // Configura transição automática (opcional)
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+<!-- Script para o botão 1 -->    
+       <script>
+    document.getElementById('botao-baixar').addEventListener('click', function() {
+        // Cria um elemento <a> virtual
+        var link = document.createElement('a');
+        
+        // Define o caminho do arquivo PDF
+        link.href = 'boletim diversidade.pdf'; 
+        
+        // Adiciona o atributo download para forçar o download
+        link.download = 'boletim diversidade.pdf'; // Opcional: define um nome para o arquivo baixado
+        
+        // Adiciona o link ao corpo do documento (temporariamente)
+        document.body.appendChild(link);
+        
+        // Simula o clique no link
+        link.click();
+        
+        // Remove o link do corpo do documento
+        document.body.removeChild(link);
+    });
+    </script>
+<!-- Script para o botão 2 -->    
+       <script>
+    document.getElementById('botao-baixar1').addEventListener('click', function() {
+        // Cria um elemento <a> virtual
+        var link = document.createElement('a');
+        
+        // Define o caminho do arquivo PDF
+        link.href = 'Infografico desiguldade_2.png'; 
+        
+        // Adiciona o atributo download para forçar o download
+        link.download = 'Infografico desiguldade_2.png'; // Opcional: define um nome para o arquivo baixado
+        
+        // Adiciona o link ao corpo do documento (temporariamente)
+        document.body.appendChild(link);
+        
+        // Simula o clique no link
+        link.click();
+        
+        // Remove o link do corpo do documento
+        document.body.removeChild(link);
+    });
+    </script>    
+    <!-- Script para o botão 3 -->    
+       <script>
+    document.getElementById('botao-baixar2').addEventListener('click', function() {
+        // Cria um elemento <a> virtual
+        var link = document.createElement('a');
+        
+        // Define o caminho do arquivo PDF
+        link.href = 'manual de genero.pdf'; 
+        
+        // Adiciona o atributo download para forçar o download
+        link.download = 'manual de genero.pdf'; // Opcional: define um nome para o arquivo baixado
+        
+        // Adiciona o link ao corpo do documento (temporariamente)
+        document.body.appendChild(link);
+        
+        // Simula o clique no link
+        link.click();
+        
+        // Remove o link do corpo do documento
+        document.body.removeChild(link);
+    });
+    </script>  
+    <!-- Script para o botão 4 -->    
+       <script>
+    document.getElementById('botao-baixar3').addEventListener('click', function() {
+        // Cria um elemento <a> virtual
+        var link = document.createElement('a');
+        
+        // Define o caminho do arquivo PDF
+        link.href = 'Guia de ComunicaçãoRespeitosa.pdf'; 
+        
+        // Adiciona o atributo download para forçar o download
+        link.download = 'Guia de ComunicaçãoRespeitosa.pdf'; // Opcional: define um nome para o arquivo baixado
+        
+        // Adiciona o link ao corpo do documento (temporariamente)
+        document.body.appendChild(link);
+        
+        // Simula o clique no link
+        link.click();
+        
+        // Remove o link do corpo do documento
+        document.body.removeChild(link);
+    });
+    </script>   
+    <!-- Script para o botão 5 -->    
+       <script>
+    document.getElementById('botao-baixar4').addEventListener('click', function() {
+        // Cria um elemento <a> virtual
+        var link = document.createElement('a');
+        
+        // Define o caminho do arquivo PDF
+        link.href = 'Manual antirracista.pdf'; 
+        
+        // Adiciona o atributo download para forçar o download
+        link.download = 'Manual antirracista.pdf'; // Opcional: define um nome para o arquivo baixado
+        
+        // Adiciona o link ao corpo do documento (temporariamente)
+        document.body.appendChild(link);
+        
+        // Simula o clique no link
+        link.click();
+        
+        // Remove o link do corpo do documento
+        document.body.removeChild(link);
+    });
+    </script>   
+</body>
+</html>
